@@ -11,6 +11,7 @@ lista = ['Azul', 'Rojo', 'Verde','Morado','Rosa']
 #3. Find the length of your list
 print(len(lista)) # 5
 
+#
 #4. Get the first item, the middle item and the last item of the list
 primer_color=lista[0]
 print(primer_color) #Azul
