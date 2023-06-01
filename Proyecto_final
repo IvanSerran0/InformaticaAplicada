@@ -1,0 +1,14 @@
+import pandas as pd
+import statistics
+
+
+base=pd.read_csv('iris.csv')
+longitud_sepalo=base['sepal.length']
+ancho_sepalo=base['sepal.width']
+longitud_petalo=base['petal.length']
+ancho_petalo=base['petal.width']
+
+#print(base)
+mean = statistics.mean(base['sepal.length'])
+#print(base['sepal.length'])
+print(mean)
