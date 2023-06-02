@@ -15,18 +15,34 @@ Análisis estadístico de datos de la flor Iris
 '''
 I.Introduccion
 
+La planta de iris comúnmente conocida como lirio es una planta de la familia de las Ridáceas. Ésta es originaria del continente europeo y cuenta con hojas largas en forma de cinta que pueden medir unos 40 cm.  Estas hojas se presentan erguidas y son verdes en tonos claros.
 
-'''
-'''
+Las flores del lirio ofrecen bastante perfume y también un gran tamaño. Normalmente se presentan en grupos de unas seis flores y son de color violeta o purpura. Además de estos colores también se puede encontrar en colores amarillos, blancos, rojos y también en flores jaspeadas.
+
+Dentro de los usos del iris está el decorativo, aunque en sus raíces ésta tiene un jugo que puede darse como purgante. [1]
+
+En el presente proyecto se analizará estadisticamente en Python una base de datos que contiene datos importantes de la flor Iris y sus variantes.
+
 II.Variables y tipos de datos
-A. Descripcion de las variables utilizadas en el conjunto de datos de Iris
-B. Tipos de datos utilizados en el conjunto de datos de Iris (numéricos y categóricos)
+
+*Variables numéricas
+Son variables que se utilizan para almacenar y operar con todo tipo de números. 
+
+*Variables de texto (cadenas)
+En estas variables se almacenan datos referentes a caracteres o cadenas de texto, como pueden ser palabras,
+frases o cadenas de texto que contengan letras y números
+
+En el presente proyecto se estarán manejando variables como la longitud y el ancho del Sépalo y Pétalo de la flor Iris, este tipo de variables serán numéricos.
+
+El tipo de flor Iris será otro tipo de variable, en este caso será una variable de texto o cadena.
 '''
 
 '''
 III. Análisis estadístico con el conjunto de datos de Iris
 A. Presentación del conjunto de datos de Iris y sus características.
 '''
+print("----------Conjunto de datos acerca del tipo de la flor Iris:----------")
+print(tipo)
 print("----------Conjunto de datos acerca de la longitud del Sépalo de la flor Iris:----------")
 print(longitud_sepalo)
 print("----------Conjunto de datos acerca del ancho del Sépalo de la flor Iris:----------")
@@ -35,8 +51,6 @@ print("----------Conjunto de datos acerca de la longitud del Petalo de la flor I
 print(longitud_petalo)
 print("----------Conjunto de datos acerca del ancho del Petalo de la flor Iris:----------")
 print(ancho_petalo)
-print("----------Conjunto de datos acerca del tipo de la flor Iris:----------")
-print(tipo)
 
 '''
 B. Estadística descriptiva. Cálculo de medidas: promedio, desviación estándar,
@@ -81,14 +95,6 @@ print("El valor máximo del ancho del Pétalo de la flor Iris es: ", max(base['p
 
 '''
 IV. Visualización de datos
-A. Uso de gráficos y visualizaciones para representar los datos de Iris.
-B. Creación de gráficos de dispersión e histogramas, para revelar patrones y
-distribuciones de los datos. Para cubrir el inciso (B), mínimo presentar los siguientes
-tres gráficos:
-
-    1. Histograma de las longitudes de pétalos para cada especie de Iris.
-    2. Diagrama de dispersión de longitud del sépalo vs. ancho del sépalo
-    3. Correlación entre las variables
 '''
 
 
@@ -139,4 +145,24 @@ plt.xlabel('Longitud del Pétalo')
 plt.ylabel('Ancho del Pétalo')
 plt.show()
 
-print("")
+'''
+
+V. Conclusiones
+A. Reflexión sobre la importancia de comprender variables, tipos de datos,
+expresiones y operadores en el análisis estadístico
+
+El presente proyecto contiene muchas líneas de código pero el previo conocimiento de las herramientas es lo que hace que utilizar una base de datos se vuelva fácil y comprendible
+para los demás colaboradores.
+
+El conocimiento del tipo de datos y herramientas que se utilizan es demasiado importante debido a que gracias a esto el análisis se vuelve mucho más fácil de lo que parece. El
+uso de los diferentes tipos de variables se usa dia a dia en una carrera como al Ingeniería Electrónica, es algo con lo que se está constantemente asociado, asimismo los diferentes tipos
+de operadores y expresiones lógicas por lo que este proyecto ayuda a retomar lo que se está acostumbrado dia con dia como Ingeniero Electrónico y refuerza los conceptos para poder 
+llevarlos a cabo en el análisis estadístico y comprender como los diferentes tipos de datos proporcionan informacion importante para lo que se está investigando.
+
+
+
+VI. Referencias:
+
+[1] "Iris". Flores Pedia. https://www.florespedia.com/iris (accedido el 20 de mayo de 2023).
+[2] "Variables". PORTAL DE ACCESO a los servicios de la UM. https://webs.um.es/ldaniel/iscyp17-18/04a-variables.html#:~:text=Las%20variables%20numéricas,%20que%20son,quilos%20que%20pesa%20una%20persona. (accedido el 26 de mayo de 2023).
+'''
