@@ -13,7 +13,7 @@ Las flores del lirio ofrecen bastante perfume y también un gran tamaño. Normal
 
 Dentro de los usos del iris está el decorativo, aunque en sus raíces ésta tiene un jugo que puede darse como purgante. [1]
 
-En el presente proyecto se analizará estadisticamente en Python una base de datos que contiene datos importantes de la flor Iris y sus variantes.
+En el presente proyecto se analizará estadisticamente en Python una base de datos que contiene datos importantes de la flor Iris y sus variantes con el fin de poner a prueba lo aprendido acerca de los diferentes tipos de datos, variables, expresiones y operadores y demostrar que tan importantes son.
 
 ### II. Variables y tipos de datos
 
