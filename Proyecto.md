@@ -1,4 +1,7 @@
-
+#### Universidad Autónoma de Zacatecas
+#### Ingeniería en Electrónica Industrial
+#### Iván Humberto Serrano Puente
+#### Informática Aplicada
 
 ## Análisis estadístico de datos de la flor Iris
 
