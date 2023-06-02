@@ -2,7 +2,7 @@
 
 ## Análisis estadístico de datos de la flor Iris
 
-### I. Introduccion
+### I. Introducción
 
 La planta de iris comúnmente conocida como lirio es una planta de la familia de las Ridáceas. Ésta es originaria del continente europeo y cuenta con hojas largas en forma de cinta que pueden medir unos 40 cm.  Estas hojas se presentan erguidas y son verdes en tonos claros.
 
@@ -127,7 +127,7 @@ plt.xlabel('Longitud de pétalo')
 plt.ylabel('Frecuencia')
 plt.show()
 ```
-#### Diagrama de dispersion
+#### Diagrama de dispersion Longitud del Sépalo vs. Ancho del Sépalo
 
 ```python
 plt.scatter(base['sepal.length'],base['sepal.width'])
@@ -149,7 +149,7 @@ plt.ylabel('Ancho del Sépalo')
 plt.show()
 ```
 
-#### Correlación de los datos de la longitud y el ancho del Pépalo
+#### Correlación de los datos de la longitud y el ancho del Pétalo
 
 ```python
 corr2=np.corrcoef(base['petal.length'],base['petal.width'])[0,1]
@@ -176,5 +176,5 @@ llevarlos a cabo en el análisis estadístico y comprender como los diferentes t
 ## VI. Referencias:
 
 [1] "Iris". Flores Pedia. https://www.florespedia.com/iris (accedido el 20 de mayo de 2023).
+
 [2] "Variables". PORTAL DE ACCESO a los servicios de la UM. https://webs.um.es/ldaniel/iscyp17-18/04a-variables.html#:~:text=Las%20variables%20numéricas,%20que%20son,quilos%20que%20pesa%20una%20persona. (accedido el 26 de mayo de 2023).
-'''
