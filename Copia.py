@@ -130,4 +130,3 @@ plt.title(f'Coeficiente de correlación del Pétalo: {corr2:.2f}')
 plt.xlabel('Longitud del Pétalo')
 plt.ylabel('Ancho del Pétalo')
 plt.show()
-
