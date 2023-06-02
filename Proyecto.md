@@ -2,7 +2,7 @@
 
 ## Análisis estadístico de datos de la flor Iris
 
-### I.Introduccion
+### I. Introduccion
 
 La planta de iris comúnmente conocida como lirio es una planta de la familia de las Ridáceas. Ésta es originaria del continente europeo y cuenta con hojas largas en forma de cinta que pueden medir unos 40 cm.  Estas hojas se presentan erguidas y son verdes en tonos claros.
 
@@ -12,7 +12,7 @@ Dentro de los usos del iris está el decorativo, aunque en sus raíces ésta tie
 
 En el presente proyecto se analizará estadisticamente en Python una base de datos que contiene datos importantes de la flor Iris y sus variantes.
 
-### II.Variables y tipos de datos
+### II. Variables y tipos de datos
 
 - Variables numéricas
 Son variables que se utilizan para almacenar y operar con todo tipo de números. 
@@ -42,10 +42,10 @@ longitud_petalo=base['petal.length']
 ancho_petalo=base['petal.width']
 tipo=base['variety']
 ```
-'''
-III. Análisis estadístico con el conjunto de datos de Iris
-A. Presentación del conjunto de datos de Iris y sus características.
-'''
+
+### III. Análisis estadístico con el conjunto de datos de Iris
+- Presentación del conjunto de datos de Iris y sus características.
+```python
 print("----------Conjunto de datos acerca del tipo de la flor Iris:----------")
 print(tipo)
 print("----------Conjunto de datos acerca de la longitud del Sépalo de la flor Iris:----------")
@@ -56,13 +56,13 @@ print("----------Conjunto de datos acerca de la longitud del Petalo de la flor I
 print(longitud_petalo)
 print("----------Conjunto de datos acerca del ancho del Petalo de la flor Iris:----------")
 print(ancho_petalo)
-
+```
 '''
 B. Estadística descriptiva. Cálculo de medidas: promedio, desviación estándar,
 mínimos y máximos.
 '''
 
-
+```python
 mean_sep1 = statistics.mean(base['sepal.length'])
 mean_sep2 = statistics.mean(base['sepal.width'])
 mean_pet1 = statistics.mean(base['petal.length'])
@@ -97,16 +97,18 @@ print("El valor máximo de la longitud del Pétalo de la flor Iris es: ", max(ba
 
 print("El valor mínimo del ancho del Pétalo de la flor Iris es: ", min(base['petal.width']))
 print("El valor máximo del ancho del Pétalo de la flor Iris es: ", max(base['petal.width']))
+```
 
-'''
-IV. Visualización de datos
-'''
+### IV. Visualización de datos
 
-
+#### Declaracion de las variantes de la Flor Iris del dataset
+```python
 setosa=base[0:50]
 versicolor=base[50:100]
 virginica=base[101:150]
-#--------HISTOGRAMAS--------
+```
+#### Histogramas 
+```python
 plt.hist(setosa['petal.length'],bins=50)
 plt.title('Longitud de pétalo de la especie "Setosa" de Iris')
 plt.xlabel('Longitud de pétalo')
@@ -124,16 +126,20 @@ plt.title('Longitud de pétalo de la especie "Virginica" de Iris')
 plt.xlabel('Longitud de pétalo')
 plt.ylabel('Frecuencia')
 plt.show()
+```
+#### Diagrama de dispersion
 
-#--------Diagrama de dispersion--------
-
+```python
 plt.scatter(base['sepal.length'],base['sepal.width'])
 plt.title('Longitud del Sépalo vs. Ancho del Sépalo')
 plt.xlabel('Longitud del Sépalo')
 plt.ylabel('Ancho del Sépalo')
 plt.show()
+```
 
-#--------Correlación de los datos de la longitud y el anocho del Sépalo--------
+#### Correlación de los datos de la longitud y el ancho del Sépalo
+
+```python
 corr=np.corrcoef(base['sepal.length'],base['sepal.width'])[0,1]
 
 plt.scatter(base['sepal.length'],base['sepal.width'])
@@ -141,20 +147,21 @@ plt.title(f'Coeficiente de correlación del Sépalo: {corr:.2f}')
 plt.xlabel('Longitud del Sépalo')
 plt.ylabel('Ancho del Sépalo')
 plt.show()
+```
 
-#--------Correlación de los datos de la longitud y el anocho del Pépalo--------
+#### Correlación de los datos de la longitud y el ancho del Pépalo
+
+```python
 corr2=np.corrcoef(base['petal.length'],base['petal.width'])[0,1]
 plt.scatter(base['petal.length'],base['petal.width'])
 plt.title(f'Coeficiente de correlación del Pétalo: {corr2:.2f}')
 plt.xlabel('Longitud del Pétalo')
 plt.ylabel('Ancho del Pétalo')
 plt.show()
+```
 
-'''
 
-V. Conclusiones
-A. Reflexión sobre la importancia de comprender variables, tipos de datos,
-expresiones y operadores en el análisis estadístico
+## V. Conclusiones
 
 El presente proyecto contiene muchas líneas de código pero el previo conocimiento de las herramientas es lo que hace que utilizar una base de datos se vuelva fácil y comprendible
 para los demás colaboradores.
@@ -166,7 +173,7 @@ llevarlos a cabo en el análisis estadístico y comprender como los diferentes t
 
 
 
-VI. Referencias:
+## VI. Referencias:
 
 [1] "Iris". Flores Pedia. https://www.florespedia.com/iris (accedido el 20 de mayo de 2023).
 [2] "Variables". PORTAL DE ACCESO a los servicios de la UM. https://webs.um.es/ldaniel/iscyp17-18/04a-variables.html#:~:text=Las%20variables%20numéricas,%20que%20son,quilos%20que%20pesa%20una%20persona. (accedido el 26 de mayo de 2023).
