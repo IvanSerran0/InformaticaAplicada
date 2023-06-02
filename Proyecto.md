@@ -9,6 +9,16 @@ ancho_sepalo=base['sepal.width']
 longitud_petalo=base['petal.length']
 ancho_petalo=base['petal.width']
 tipo=base['variety']
+
+
+## Análisis estadístico de datos de la flor Iris
+
+
+### I.Introduccion
+
+
+
+
 '''
 II.Variables y tipos de datos
 A. Descripcion de las variables utilizadas en el conjunto de datos de Iris
