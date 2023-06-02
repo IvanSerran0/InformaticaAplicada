@@ -1,3 +1,4 @@
+```python
 import pandas as pd
 import statistics
 import matplotlib .pyplot as plt
@@ -9,7 +10,7 @@ ancho_sepalo=base['sepal.width']
 longitud_petalo=base['petal.length']
 ancho_petalo=base['petal.width']
 tipo=base['variety']
-
+```
 
 ## Análisis estadístico de datos de la flor Iris
 
