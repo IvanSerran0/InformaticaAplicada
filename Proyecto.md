@@ -57,10 +57,10 @@ print(longitud_petalo)
 print("----------Conjunto de datos acerca del ancho del Petalo de la flor Iris:----------")
 print(ancho_petalo)
 ```
-'''
-B. Estadística descriptiva. Cálculo de medidas: promedio, desviación estándar,
-mínimos y máximos.
-'''
+
+- Estadística descriptiva.
+
+#### Cálculo de medidas: promedio, desviación estándar, mínimos y máximos.
 
 ```python
 mean_sep1 = statistics.mean(base['sepal.length'])
